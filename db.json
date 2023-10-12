@@ -1,5 +1,30 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Vicki Beer",
+      "id": 2
+    },
+    {
+      "name": "Anne Greenfelder",
+      "id": 3
+    },
+    {
+      "name": "Debbie Hodkiewicz",
+      "id": 4
+    },
+    {
+      "name": "Evan Sauer",
+      "id": 6
+    },
+    {
+      "name": "Israel Bernier",
+      "id": 7
+    }
+  ],
   "albums": [],
   "photos": []
 }
