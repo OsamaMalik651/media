@@ -1,5 +1,22 @@
 {
-  "users": [{ "id": 1, "name": "myra" }],
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Vicki Beer",
+      "id": 2
+    },
+    {
+      "name": "Anne Greenfelder",
+      "id": 3
+    },
+    {
+      "name": "Debbie Hodkiewicz",
+      "id": 4
+    }
+  ],
   "albums": [],
   "photos": []
 }
