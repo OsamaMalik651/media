@@ -21,27 +21,34 @@ const UsersList = () => {
         doCreateUser();
     }
 
-    if (isLoadingUsers) {
-        return <div><Skeleton times={5} className="h-10 w-full" /></div>
-    };
     if (loadingUsersError) {
         return <div>Error fetching data</div>
     }
 
-    const renderedUsers = data.map((user) => {
-        return <div key={user.id} className='mb-2 border rounded'>
-            <div className='flex p-2 justify-between items-center cursor-pointer'>
-                {user.name}
+
+    let content;
+    if (isLoadingUsers) {
+        content = <div><Skeleton times={5} className="h-10 w-full" /></div>;
+    } else if (creatingUserError) {
+        content = <div>Error fetching data</div>;
+    } else {
+        content = data.map((user) => {
+            return <div key={user.id} className='mb-2 border rounded'>
+                <div className='flex p-2 justify-between items-center cursor-pointer'>
+                    {user.name}
+                </div>
             </div>
-        </div>
-    })
+        })
+    }
     return (
         <div>
-            <div className='flex justify-between m-3'><h1 className='m-2 text-xl'>List of Users</h1>
-                {isCreatingUser ? 'Creating User' : <Button onClick={handleUserAdd}>Add User</Button>}
+            <div className='flex justify-between items-center m-3'><h1 className='m-2 text-xl'>List of Users</h1>
+                <Button onClick={handleUserAdd} loading={isCreatingUser}>+ Add User</Button>
                 {creatingUserError && 'Error creating user'}
             </div>
-            {renderedUsers}</div>
+            {content}
+
+        </div>
     )
 }
 
