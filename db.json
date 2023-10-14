@@ -17,14 +17,77 @@
       "id": 4
     },
     {
-      "name": "Evan Sauer",
-      "id": 6
-    },
-    {
-      "name": "Israel Bernier",
-      "id": 7
+      "name": "Walter Goodwin V",
+      "id": 5
     }
   ],
-  "albums": [],
-  "photos": []
+  "albums": [
+    {
+      "title": "Incredible Plastic Salad",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "Generic Metal Pizza",
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "title": "Incredible Wooden Chips",
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "title": "Gorgeous Metal Soap",
+      "userId": 2,
+      "id": 12
+    },
+    {
+      "title": "Rustic Steel Table",
+      "userId": 3,
+      "id": 14
+    },
+    {
+      "title": "Elegant Granite Soap",
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "title": "Luxurious Cotton Car",
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "title": "Recycled Cotton Tuna",
+      "userId": 5,
+      "id": 17
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7742596967301120",
+      "id": 1
+    },
+    {
+      "albumId": 14,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5888932289970176",
+      "id": 3
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2283642212581376",
+      "id": 4
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2663186004180992",
+      "id": 5
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8833012546404352",
+      "id": 6
+    }
+  ]
 }
